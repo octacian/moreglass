@@ -14,7 +14,7 @@ minetest.register_node(BASENAME..":mineral_tungsten", {
 -- [ORE REGISTER] tungsten
 minetest.register_ore({
   ore_type = "scatter",
-  ore = BASENAME..":mineral_silver",
+  ore = BASENAME..":mineral_tungsten",
   wherein = "default:stone",
   clust_scarcity = 8*8*8,
   clust_num_ores = 4,
@@ -62,7 +62,7 @@ minetest.register_craft({
   },
 })
 
--- SILVER --
+--[[ SILVER --
 
 minetest.register_node(BASENAME..":mineral_silver", {
   description = "Silver Ore",
@@ -133,7 +133,7 @@ minetest.register_craft({
   type = "shapeless",
   output = BASENAME..":wire_silver 9",
   recipe = {BASENAME..":ingot_silver"},
-})
+})]]
 
 -- ITEMS (wire, bulb) --
 
